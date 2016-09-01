@@ -46,14 +46,13 @@ def self.scrape_hotels
 ```
 
 ```
-def hotels
-    Travel::Scraper.scrape_hotels.each.with_index(1) do |winner, index|
-      puts "#{index}: #{winner.name} - #{winner.location}"
+    def hotels
+      Travel::Scraper.scrape_hotels.each.with_index(1) do |winner, index|
+        puts "#{index}: #{winner.name} - #{winner.location}"
+      end
+      return nil
     end
-    return nil
-  end
-	
-	```
+		```
 
 Each category has from 10 to 25 winners. I thought about specifying the number of winners in cli.rb were all the interaction takes place but thinking this gem can be used in the future (maybe change the number of winners?!?!) and hoping the rest wont brake, I decided to keep the information as minimum as possible. 
 
