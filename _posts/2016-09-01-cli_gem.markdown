@@ -1,0 +1,72 @@
+---
+layout: post
+title:  "CLI Gem..."
+date:   2016-09-01 15:52:35 +0000
+---
+
+
+For the gem project I decided to scrape TripAdvisor.cm -Travelers’ Choice Awards – World. 
+
+I started building the gem by building the cli first. After that, scraping the web pages of each category was easy. When that was over and looking the 150 lines of code in cli.rb and another 130 in my scraper.rb I thought about improving it. I could improve it by scraping the main page were all categories were. I knew somehow that if I get the list - see below - from scraping, the rest of the project will be easy to finish. But how do you get a list (and later all the information) from scraping  a page with 10 categories with each category having different web page, different css elements and different information? That's it ...the beast won ...for now at least!!!
+
+      1 - All Inclusive Resorts,
+      2 - Attractions,
+      3 - Beaches,
+      4 - Destinations,
+      5 - Destinations on the Rise,
+      6 - Hotels,
+      7 - Islands,
+      8 - Landmarks,
+      9 - Museums,
+      10 – Restaurants
+
+Another solution was to create an array of all categories and add  scrape_nameOfCategory which includes the url. It would look like this:
+
+```
+categories = [
+"Hotels = method: :scrape_hotels",
+....
+]
+```
+which looks ugly and that option was dropped. After all, the purpose was to substantially reduce the code. This is something I will work on in the future.
+
+Example of code written:
+
+```
+def self.scrape_hotels
+    doc = Nokogiri::HTML(open("https://www.tripadvisor.com/TravelersChoice-Hotels"))
+    category = doc.css("h1.laurelhdr").text
+
+    winners = doc.css("div.posRel.tcInner").map do |winner|
+      name = winner.css(".mainName.extra a").first.text
+      location = winner.css(".smaller a").first.text
+      Hotel.new(name, location)
+    end
+  end
+```
+
+```
+def hotels
+    Travel::Scraper.scrape_hotels.each.with_index(1) do |winner, index|
+      puts "#{index}: #{winner.name} - #{winner.location}"
+    end
+    return nil
+  end
+	
+	```
+
+Each category has from 10 to 25 winners. I thought about specifying the number of winners in cli.rb were all the interaction takes place but thinking this gem can be used in the future (maybe change the number of winners?!?!) and hoping the rest wont brake, I decided to keep the information as minimum as possible. 
+
+The most confusing part was publishing the gem. For that purpose I used ```$ rake release``` command  instead of ```$ gem build <nameofgem.gemspec.<version>```. ```Rake release``` is a bundler feature and provided we have committed everything, does a couple of things: First it builds the gem to the pkg directory in preparation for a push to Rubygems.org.
+
+Second, it creates a tag for the current commit reflecting the current version and pushes it to the git remote. If you want to release a new version just delete the pkg folder and ```rake release``` again.
+
+To see all available rake commands just type ```$ rake  --tasks```.
+
+Enjoy your vacation!
+
+[http://github.com/ms94ap/travel-cli-gem](http://)
+[https://www.tripadvisor.com/TravelersChoice](http://)
+
+
+
