@@ -64,8 +64,8 @@ To see all available rake commands just type ```$ rake  --tasks```.
 
 Enjoy your vacation!
 
-[]([http://github.com/ms94ap/travel-cli-gem)
-[](https://www.tripadvisor.com/TravelersChoice)
+[github.com/ms94ap/travel-cli-gem](http://)
+[www.tripadvisor.com/TravelersChoice](http://)
 
 
 
