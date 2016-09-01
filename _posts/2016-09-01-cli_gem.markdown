@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "CLI Gem..."
-date:   2016-09-01 15:52:35 +0000
+date:   2016-09-01 11:52:35 -0400
 ---
 
 
-For the gem project I decided to scrape TripAdvisor.cm -Travelers’ Choice Awards – World. 
+For the gem project I decided to scrape TripAdvisor.com -Travelers’ Choice Awards – World. 
 
 I started building the gem by building the cli first. After that, scraping the web pages of each category was easy. When that was over and looking the 150 lines of code in cli.rb and another 130 in my scraper.rb I thought about improving it. I could improve it by scraping the main page were all categories were. I knew somehow that if I get the list - see below - from scraping, the rest of the project will be easy to finish. But how do you get a list (and later all the information) from scraping  a page with 10 categories with each category having different web page, different css elements and different information? That's it ...the beast won ...for now at least!!!
 
