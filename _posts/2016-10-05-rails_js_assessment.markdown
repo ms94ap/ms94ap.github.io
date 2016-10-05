@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Rails JS assessment"
-date:   2016-10-05 18:43:44 +0000
+date:   2016-10-05 14:43:45 -0400
 ---
 
-Back to rails project and these time to complete the JS part. 
+Back to rails project and this time to complete the JS part. 
 
 Confused as to where to start, I decided to work on the user. In order to improve user experience I added a jQuery to posts/index and posts/show. More specifically the producer/user can see all the posts in the app without clicking on individual post.I added a Next post link to render the post and when the user sees all the posts, the "Next post" link disappears. 
 
