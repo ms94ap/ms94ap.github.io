@@ -1,10 +1,10 @@
 # Site settings
-title: About me
+title: My blog
 header-img: img/home-bg.png
 email: a_papacostas@yahoo.com
 copyright_name: ms94ap
 description: > # this means to ignore newlines until "baseurl:"
-  
+   
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  ms94ap
