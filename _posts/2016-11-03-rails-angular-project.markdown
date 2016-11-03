@@ -9,9 +9,9 @@ The term 'Bedu'in the Arabic language refers to one who lives out in the open, i
 
 There are two ways to build an app. Either start building the front end with AngularJs and then build your back end with Rails or the other way round. I prefer to start from bottom up. Setting up Rails didn't take took long.
 
-1)Some key points of the project
+Some key points of the project
 
-Adding and removing gems
+1) Adding and removing gems
 Working with turbolinks can be challenging. The link explains the differences between turbolinks and Angular JS and how you can set up your files.
 
 [](http://stackoverflow.com/questions/14797935/using-angularjs-with-turbolinks)
@@ -29,9 +29,8 @@ https://github.com/rharriso/bower-rails
 2) Getting single store back from a list.
 
 First thing is to set up the route in routes.js
+
 ```
-
-
 .state('home.store', {
                     url:'stores/:id',
                     templateUrl:'stores/store.html',
@@ -41,15 +40,14 @@ First thing is to set up the route in routes.js
 ```
 
 In Stores.Controller.js I have created a callable method getStore with id as an argument which will return from StoreFactory the getStore method with the id.
-```
 
+```
 function getStore(id){
 			return StoreFactory.getStore(id);
 ```
 In StoreFactory the getStore is returning a $http.get request of stores plus the storeId which was passed as an argument in the method
 
 ```
-
 function getStore(storeId) {
 	
 			return $http.get('/stores/' + storeId)
@@ -59,8 +57,6 @@ function getStore(storeId) {
 I edited the activate method defined in the Stores.Controller.js
 
 ```
-
-
 function activate(){
 ​// get a single store
 			if ($stateParams.id) {
