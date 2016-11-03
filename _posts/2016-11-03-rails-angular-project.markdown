@@ -13,7 +13,10 @@ There are two ways to build an app. Either start building the front end with Ang
 
 Adding and removing gems
 Working with turbolinks can be challenging. The link explains the differences between turbolinks and Angular JS and how you can set up your files.
-http://stackoverflow.com/questions/14797935/using-angularjs-with-turbolinks. But should you choose to delete it you should also remove it from asset pipeline.
+
+[](http://stackoverflow.com/questions/14797935/using-angularjs-with-turbolinks)
+But should you choose to delete it you should also remove it from asset pipeline.
+
 In the gemfile I also included:
 gem 'pry'
 gem 'bower-rails'
@@ -27,20 +30,26 @@ https://github.com/rharriso/bower-rails
 
 First thing is to set up the route in routes.js
 ```
+
+
 .state('home.store', {
                     url:'stores/:id',
                     templateUrl:'stores/store.html',
                     controller:'StoreController as vm'
                 })
+
 ```
 
 In Stores.Controller.js I have created a callable method getStore with id as an argument which will return from StoreFactory the getStore method with the id.
 ```
+
 function getStore(id){
 			return StoreFactory.getStore(id);
 ```
 In StoreFactory the getStore is returning a $http.get request of stores plus the storeId which was passed as an argument in the method
+
 ```
+
 function getStore(storeId) {
 	
 			return $http.get('/stores/' + storeId)
@@ -48,7 +57,10 @@ function getStore(storeId) {
         				.catch(handleError);
 ```
 I edited the activate method defined in the Stores.Controller.js
+
 ```
+
+
 function activate(){
 ​// get a single store
 			if ($stateParams.id) {
