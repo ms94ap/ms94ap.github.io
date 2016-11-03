@@ -18,12 +18,12 @@ Working with turbolinks can be challenging. The link explains the differences be
 But should you choose to delete it you should also remove it from asset pipeline.
 
 In the gemfile I also included:
-*
-gem 'pry'
-gem 'bower-rails'
-gem 'angular-rails-templates'
-gem 'active_model_serializers', '~> 0.10.0'
-*
+
+* gem 'pry',
+* gem 'bower-rails',
+* gem 'angular-rails-templates',
+* gem 'active_model_serializers', '~> 0.10.0',
+
 Bower is  package manager supplying a huge range of Javascript and CSS frameworks and plugins, which runs via Node. Below is the link on how to install it:
 https://github.com/rharriso/bower-rails
 
