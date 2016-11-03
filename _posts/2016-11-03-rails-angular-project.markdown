@@ -18,11 +18,12 @@ Working with turbolinks can be challenging. The link explains the differences be
 But should you choose to delete it you should also remove it from asset pipeline.
 
 In the gemfile I also included:
+*
 gem 'pry'
 gem 'bower-rails'
 gem 'angular-rails-templates'
 gem 'active_model_serializers', '~> 0.10.0'
-
+*
 Bower is  package manager supplying a huge range of Javascript and CSS frameworks and plugins, which runs via Node. Below is the link on how to install it:
 https://github.com/rharriso/bower-rails
 
@@ -75,6 +76,6 @@ and finally pass $stateParams as an argument in the StoresController function
 At first those two were confusing but reading a couple of articles it is much clearer what both do. So all in all Factory returns objects and Services return functions. (More to come soon)
 
 ToDo
-1) I will continue the project by adding more categories.
-2) I will reform the app to create users
-3) Add bootstrap of course
+1. I will continue the project by adding more categories.
+2. I will reform the app to create users
+3. Add bootstrap of course
