@@ -4,7 +4,7 @@ title:  "Factories vs Services"
 date:   2016-11-14 10:49:45 -0400
 ---
 
-So what is the difference between Factories and differences? Very confusing at the beggining but reading those two articles below made it clearer and easy to understand.
+So what is the difference between Factories and Services? Very confusing at the beggining but reading this article below made it clearer and easy to understand.
 From Todd Motto's web site:
 https://toddmotto.com/factory-versus-service
 
