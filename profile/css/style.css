@@ -4,7 +4,7 @@ html {
 /*---Header---*/
 
 .header {
-	background: black;
+	background: rgb(38, 38, 38);
 	height: 30px;
 	font-size: 20px;
 }
@@ -30,19 +30,34 @@ a[href^="http"] {
 /*---Profile Picture---*/
 
 img[alt="pic"]{
-	width: 100px;
-	height: 100px;
-	background: red;
+	position: absolute;
+	top: 70;
+	width: 105px;
+	height: 105px;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px
+
 }
 
 h2 {
-	text-align: center;
+	position: relative;
+	left: 160px;
+	font-size: 30px;
 }
 
 .sub-text {
+	position: relative;
+	left: 160px;
+	font-size: 20px;
+}
+
+/*--- Social-Icons ---*/
+.social-icon-container {
 	text-align: center;
 }
 
+/*---first Section---*/
+.first-text {
+	border-bottom: solid;
+}
