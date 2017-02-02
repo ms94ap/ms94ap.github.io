@@ -1,0 +1,48 @@
+html {
+	background-color: rgb(217, 217, 217);
+}
+/*---Header---*/
+
+.header {
+	background: black;
+	height: 30px;
+	font-size: 20px;
+}
+
+/*---body rezising---*/
+
+body {
+	margin-left: 500px;
+	margin-right: 500px;
+	padding-right: 25px;
+	padding-left: 50px;
+	background-color: white;
+}
+
+
+/*---href---*/
+
+a[href^="http"] {
+	color: red;
+	text-decoration: none
+}
+
+/*---Profile Picture---*/
+
+img[alt="pic"]{
+	width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px
+}
+
+h2 {
+	text-align: center;
+}
+
+.sub-text {
+	text-align: center;
+}
+
