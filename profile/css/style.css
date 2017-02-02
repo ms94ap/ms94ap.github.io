@@ -71,3 +71,10 @@ h2 {
 .third-text {
 	border-bottom: solid rgb(242, 242, 242);
 }
+
+/*---Footer---*/
+
+.Copyright {
+	text-align: center;
+
+}
