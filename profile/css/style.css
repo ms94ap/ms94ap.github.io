@@ -12,10 +12,10 @@ html {
 /*---body rezising---*/
 
 body {
+	margin-top: 10px;
 	margin-left: 500px;
 	margin-right: 500px;
-	padding-right: 25px;
-	padding-left: 50px;
+	margin-bottom: 10px;	
 	background-color: white;
 }
 
@@ -57,19 +57,43 @@ h2 {
 	text-align: center;
 }
 
-/*---first Section---*/
-.first-text {
-	border-bottom: solid rgb(242, 242, 242);
+/*---Inner Rows---*/
+.inner-row1 {
+	position: absolute;
+	left: 650px;
+	top: 212px
 }
 
-/*---Second Section---*/
+.inner-row2{
+	position: absolute;
+	left: 650px;
+	top: 246px
+}
+
+/*---first Section---*/
+.first-text, .second-text, .third-text, .sum {
+	border-bottom: solid rgb(242, 242, 242);
+	padding-right: 25px;
+	padding-left: 50px;
+}
+
+/*
 .second-text {
 	border-bottom: solid rgb(242, 242, 242);
+	padding-right: 25px;
+	padding-left: 50px;
 }
 
-/*---Third Section---*/
+
 .third-text {
 	border-bottom: solid rgb(242, 242, 242);
+	padding-right: 25px;
+	padding-left: 50px;
+}*/
+
+footer {
+	padding-right: 25px;
+	padding-left: 50px;
 }
 
 /*---Footer---*/
