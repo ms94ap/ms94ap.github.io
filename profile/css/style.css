@@ -59,15 +59,15 @@ h2 {
 
 /*---Inner Rows---*/
 .inner-row1 {
-	position: absolute;
-	left: 650px;
-	top: 217px
+	position: relative;
+	left: 150px;
+	bottom: 38px;
 }
 
 .inner-row2{
-	position: absolute;
-	left: 650px;
-	top: 251px
+	position: relative;
+	left: 150px;
+	bottom: 38px;
 }
 
 /*---first Section---*/
@@ -90,6 +90,11 @@ h2 {
 	padding-right: 25px;
 	padding-left: 50px;
 }*/
+
+.year {
+	position: relative;
+	left: 50px;
+}
 
 footer {
 	padding-right: 25px;
