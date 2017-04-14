@@ -3,13 +3,13 @@
 .wrapper {
 	margin: 10px auto;
 	width: 800px;
-	background-color: white;
+	background-color: #e3d9cb;
 }
 
 /*---Header---*/
 
 .header {
-	background: black;
+	background: #2c2219;
 	height: 30px;
 }
 
@@ -44,9 +44,9 @@ img[alt="pic"]{
 
 }
 
-/*img[alt="pic2"]{
+img[alt="pic2"]{
 	height: 20px;
-}*/
+}
 
 h2 {
 	position: relative;
