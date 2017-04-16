@@ -9,7 +9,7 @@
 /*---Header---*/
 
 .header {
-	background: red;
+	background: white;
 	height: 30px;
 }
 
@@ -79,7 +79,7 @@ h2 {
 }
 
 /*---first Section---*/
-.first-text, .second-text, .third-text, .sum {
+.first-text, .second-text, .third-text, .inner-text, .sum {
 	border-bottom: solid rgb(242, 242, 242);
 	padding-right: 25px;
 	padding-left: 50px;
