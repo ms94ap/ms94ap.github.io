@@ -27,7 +27,7 @@ body {
 /*---href---*/
 
 a[href^="http"] {
-	color: red;
+	color: #00CA53;
 	text-decoration: none
 }
 
@@ -46,12 +46,14 @@ img[alt="pic"]{
 
 img[alt="pic2"]{
 	height: 20px;
+	padding-left: 10px;
 }
 
 h2 {
 	position: relative;
 	left: 160px;
 	font-size: 30px;
+	color: #00CA53
 }
 
 .sub-text {
