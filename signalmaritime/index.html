@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+
+<button id="btn">If you press me I work!!!</button>
+
+<h2>This is the solution</h2>
+<p>document.getElementById("btn").addEventListener("click", function(){<br>
+    this.style.visibility = "hidden";<br>
+    setTimeout(function(){ document.getElementById("btn").style = "show" }, 1000);<br>git
+});</p>
+
+<script>
+document.getElementById("btn").addEventListener("click", function(){
+    this.style.visibility = "hidden";
+    setTimeout(function(){ document.getElementById("btn").style = "show" }, 1000);
+});
+
+</script>
+
+
+</body>
+</html>
+
