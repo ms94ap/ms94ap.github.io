@@ -383,3 +383,31 @@ a[href^="http"] {
     color: #1d1e1c;
     line-height: 30px;
 }
+
+.Footer {
+    font-size: 14px;
+    line-height: 20px;
+    color: #787e75;
+}
+
+.Footer .Footer-main {
+    padding: 60px 0;
+    background-color: #f8fbf7;
+    border-top: 1px solid #ededed;
+}
+
+.Container.Container--responsive {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-note {
+ text-align: center;
+ vertical-align: middle;
+ font-size: 26px;
+}
+
+.L-link{
+	font-style: italic;
+	font-size: 12px;	
+}
