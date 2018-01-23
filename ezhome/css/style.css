@@ -222,7 +222,6 @@ h2 {
 }
 
 .Section .Section-content h2 {
-    margin-bottom: 30px;
     margin-top: 0;
 }
 
@@ -243,6 +242,10 @@ h2 {
     font-size: 30px;
     color: rgb(29, 30, 28);
 	line-height: 40px;
+}
+
+.comment {
+	margin-bottom: 30px;
 }
 
 .Section.Section--right .Section-container {
@@ -270,4 +273,113 @@ h2 {
 
 .Section .Section-image.is-satisfaction {
     background-image: url("truck.jpg");
+}
+
+.UnitedHomePage-statisticsSection {
+	padding: 60px 0;
+	border-top: 1px solid rgb(241, 241, 241);
+}
+
+.Container.Container--lg {
+    max-width: 940px;
+}
+
+.Container {
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.u-tac {
+    text-align: center;
+}
+
+.UnitedHomePage-feedbacks {
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 4px;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.Feedback {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.Feedback .Feedback-content {
+    padding-right: 40px;
+}
+
+.Feedback .Feedback-name {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.Feedback .Feedback-city {
+    margin: 0;
+}
+
+.Feedback .Feedback-complete {
+    margin-bottom: 24px;
+}
+
+.Feedback .Feedback-feedback {
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+a[href^="http"] {
+	text-decoration: none;
+	cursor: pointer;
+    color: rgb(29, 30, 28);
+}
+
+.Feedback .Feedback-image {
+    width: 360px;
+    height: 240px;
+    -webkit-box-flex: 360px;
+    -ms-flex: 360px 0 0px;
+    flex: 360px 0 0;
+    background-size: cover;
+}
+
+.Feedback.Feedback--2 .Feedback-image {
+    background-image: url("fence2.jpg");
+}
+
+.Feedback.Feedback--1 .Feedback-image {
+    background-image: url("view.jpg");
+}
+
+.Feedback+.Feedback {
+    margin-top: 60px;
+}
+
+.t-h3.t-sh {
+	font-family: Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1d1e1c;
+    line-height: 24px;
+}
+
+.t-h1.t-ah {
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #1d1e1c;
+	line-height: 40px;
+}
+
+.t-h2.t-ah {
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #1d1e1c;
+    line-height: 30px;
 }
