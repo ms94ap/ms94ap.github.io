@@ -10,7 +10,7 @@
 
 .wrapper::before {
 	position: absolute;
-	top: 90px;
+	top: 72px;
 	right: 5%;
 	content: "";
 	width: 717px;
