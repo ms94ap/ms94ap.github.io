@@ -1,0 +1,126 @@
+
+/*---wrapper---*/
+.wrapper {
+	margin: 10px auto;
+	width: 800px;
+	background-color: white;
+}
+
+/*---Header---*/
+
+.header {
+	background: white;
+	height: 30px;
+	background: url(https://d.scdn.gr/ds/sponsorship/assets/4168/20180112143237_25716d9c.jpeg)
+}
+
+/*---body rezising---*/
+
+body {
+	/*margin-top: 10px;
+	margin-left: 450px;
+	margin-right: 450px;
+	margin-bottom: 10px;	*/
+	background-color: rgb(217, 217, 217);
+}
+
+.comment	{
+	font-style: italic;
+	color: #a6a6a6;
+	margin: 0;
+}
+
+
+/*---href---*/
+
+a[href^="http"] {
+	color: red;
+	text-decoration: none
+}
+
+/*---Profile Picture---*/
+
+img[alt="pic"]{
+	position: absolute;
+	top: 80px;
+	width: 105px;
+	height: 105px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px
+
+}
+
+img[alt="pic2"]{
+	height: 26px;
+	padding-left: 6px;
+	padding-top: 4px;
+}
+
+h2 {
+	position: relative;
+	left: 160px;
+	font-size: 30px;
+}
+
+.sub-text {
+	position: relative;
+	left: 160px;
+	font-size: 20px;
+}
+
+/*--- Social-Icons ---*/
+.social-icon-container {
+	text-align: center;
+}
+
+/*---Inner Rows---*/
+.inner-row1 {
+	position: relative;
+	left: 150px;
+	bottom: 38px;
+}
+
+.inner-row2{
+	position: relative;
+	left: 150px;
+	bottom: 38px;
+}
+
+/*---first Section---*/
+.first-text, .second-text, .third-text, .inner-text, .sum {
+	border-bottom: solid rgb(242, 242, 242);
+	padding-right: 25px;
+	padding-left: 50px;
+}
+
+/*
+.second-text {
+	border-bottom: solid rgb(242, 242, 242);
+	padding-right: 25px;
+	padding-left: 50px;
+}
+
+
+.third-text {
+	border-bottom: solid rgb(242, 242, 242);
+	padding-right: 25px;
+	padding-left: 50px;
+}*/
+
+.year {
+	position: relative;
+	left: 50px;
+}
+
+footer {
+	padding-right: 25px;
+	padding-left: 50px;
+}
+
+/*---Footer---*/
+
+.Copyright {
+	text-align: center;
+
+}
