@@ -15,7 +15,7 @@
 	 	<div> id INTEGER PRIMARY KEY,</div>
 	 	<div> employee TEXT,</div>
 	 	<div> salary INTEGER,</div>
-	 	<div>department_id INTEGER # foreign key</div>
+	 	<div>department_id INTEGER</div>
 		<div>);</div>
 
 	 <h3>Department table</h3>
@@ -32,7 +32,7 @@
 	 	<br>
 	 	 <img src="img/dep.png">
 	 	 <br><br>
-	 	 <div>and for General table</div>
+	 	 <div>and to General table</div>
 	 	 <br><br>
 	 	 <img src="img/general.png">
 	 	 <br><br>
@@ -40,7 +40,7 @@
 
 	 	 <h3>SELECT employee, MAX(salary), Department.department FROM General INNER JOIN Department ON General.department_id = Department.id GROUP BY department; </h3>
 	 	 <br><br>
-	 	 In this query I m selecting the employee column, the maximum value of the salary column from GENERAL TABLE along with the department column from Department table, I create an Inner Join with the Department table where I assign the department_id column equal  to the value of the primary key of the Department table and Group the result by department.
+	 	 In this query, I m selecting the employee column, the maximum value of the salary column from General table along with the department column from Department table, I create an Inner Join with the Department table where I assign the foreign key (department_id column) equal  to the value of the primary key of the Department table and Group the result by department
 
 	 	 <div> and it will  produce the following table:</div>
 	 	 <br>
