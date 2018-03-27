@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my solutions</title>
+</head>
+<body>
+	<div>
+		The solution to the SQL problem is as follows: <br><br>
+
+		After running the queries below:
+
+	
+	<h3> General Table</h3>
+		<div>CREATE TABLE general (</div>
+	 	<div> id INTEGER PRIMARY KEY,</div>
+	 	<div> employee TEXT,</div>
+	 	<div> salary INTEGER,</div>
+	 	<div>department_id INTEGER # foreign key</div>
+		<div>);</div>
+
+	 <h3>Department table</h3>
+	 	<div>CREATE TABLE  department (</div>
+	 	<div> id INTEGER PRIMARY KEY,</div>
+	 	<div> department TEXT</div>
+	 	<div>);</div> <br>
+
+	 	<div>It will produce the following tables:</div>
+	 	<br>
+	 	<img src="img/schema.png">
+	 	<br><br>
+	 	<div> Add some values to the Department table for the sake of the argument </div>
+	 	<br>
+	 	 <img src="img/dep.png">
+	 	 <br><br>
+	 	 <div>and for General table</div>
+	 	 <br><br>
+	 	 <img src="img/general.png">
+	 	 <br><br>
+	 	 <div> So, the query to get the maximum salary from each department with the employee name is:</div><br>
+
+	 	 <h3>SELECT employee, MAX(salary), Department.department FROM General INNER JOIN Department ON General.department_id = Department.id GROUP BY department; </h3>
+	 	 <br><br>
+	 	 In this query I m selecting the employee column, the maximum value of the salary column from GENERAL TABLE along with the department column from Department table, I create an Inner Join with the Department table where I assign the department_id column equal  to the value of the primary key of the Department table and Group the result by department.
+
+	 	 <div> and it will  produce the following table:</div>
+	 	 <br>
+	 	 <img src="img/final.png">
+	 </div>
+</body>
+</html>
